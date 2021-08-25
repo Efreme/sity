@@ -1,0 +1,624 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+/*    font-family: 'Roboto', sans-serif;*/
+   font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #000;
+}
+*,
+*:before,
+*:after {
+    
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6
+{
+margin: 0;
+}
+p
+{
+    margin: 0 0 10px;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+.header
+    {
+    width: 100%;
+    height: 138px;
+    display: flex;
+    
+       
+    
+    }
+
+.header
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+   
+   
+    
+}
+
+.header.fixed
+{
+    position: fixed;
+    background-color: #9faf7e;
+    max-height: 110px;
+
+}
+
+
+.header_inner
+
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 0;
+    
+}
+.nav
+{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+.nav_link
+{
+    margin-right: 40px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.nav_link:hover
+{
+   
+    
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+.intro
+{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    height: 800px;
+    background: #9EA78B url("Img/orel.jpg") center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    padding-top: 360px; 
+    padding-left: 500px;
+
+}
+.intro_content
+{
+    line-height: 1.35;
+}
+.intro_title
+{
+  
+    font-family:'Montserrat' ;
+    font-size: 90px;
+    color: #fff;
+    font-weight: 200;    
+    
+    
+}
+.intro_text1
+{
+  
+    font-family:'Montserrat' ;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 200;    
+    
+    
+}
+.intro_text2
+{
+    
+    font-family:'Montserrat' ;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 200;  
+   
+        
+}
+
+
+
+
+.slick-dots
+{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 125px;
+    cursor: pointer;
+    
+    
+}
+
+.slick-dots button
+{
+    background: #fff;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    opacity: 0.5;
+    margin-right: 0px;
+    cursor: pointer;
+    
+   
+    
+}
+.slick-dots .slick-active button
+{
+    background-color: aliceblue;
+    opacity: 1;
+}
+
+.slick-dots li 
+{
+    
+   display: flex;
+    max-width: 40px;
+}
+.slick-dots li button
+{
+    
+   justify-content: center; 
+    max-width: 100%;
+    margin-right: 15px;
+}
+
+.reviews
+{
+   
+    background-color: #9faf7e;
+    opacity: .9;
+    
+}
+.reviews_item
+{
+    display:flex;   
+    flex-wrap: wrap;
+    margin: 0;
+    height: 710px;
+    
+    justify-content: center;
+        
+}
+.reviews_photo
+{
+    width: 600px;
+    height: 710px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+.reviews_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-family:'Montserrat';
+    text-align: center;
+    padding-left: 80px;
+   
+    
+}
+.reviews_text
+{
+    
+    font-weight: 36px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    
+    
+}
+
+.reviews_img
+{
+    position: absolute;
+    top 50%;
+    right: 0;
+    z-index: 3;
+   
+    
+}
+
+
+.team
+{
+    margin: 70px 0;
+   
+}
+
+.team_title
+{
+    
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-family: 'Kaushan Script'cursive;
+    font-size: 60px;
+    font-weight: 500;
+    color: currentColor;
+    text-align: center;
+    opacity: 0.8;
+    padding-right: 50px;
+    
+}
+
+.team_inner
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.team_item
+{
+    width: 40%;
+    margin: 0 30px;
+
+}
+
+.team_photo
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+
+
+.team_name
+{
+    font-family: 'Kaushan Script';
+    font-size: 40px;
+    font-weight: 500;
+    color: currentColor;
+}
+
+
+
+
+.team_prof
+{
+    
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    font-weight: 500;
+    color: currentColor;
+    text-decoration:line-through;
+    text-transform: uppercase;
+}
+
+
+
+
+.team_text
+{
+    margin-top: 10px;
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social
+{
+    display: flex;
+    margin-bottom: 40px;
+    
+}
+
+
+.social_item
+{
+    width: 50px;
+    height: 50px;
+/*    border:  2px solid #87fd82;*/
+    opacity: 0.6;
+    transition: opacity .3s linear;
+    margin-right: 25px;
+    
+     
+   
+}
+
+
+.social_icon
+{
+    display: block;
+    height: 50px;
+    width: 50px;
+    fill: #ffffff;
+ 
+}
+
+
+.social_item:hover
+{
+ 
+    opacity: 1;
+}
+
+
+
+.team_neteam
+{
+    display: flex;
+    
+    flex-wrap: wrap; 
+    
+    position: relative;
+    justify-content: space-between;
+    
+   
+    
+    
+    
+    
+    
+}
+
+.team_item_neteam
+{
+    
+    width: 40%;
+    
+    display: block;
+    justify-content: space-between;
+    position: relative;
+    height: 800px;
+   
+    
+    
+    
+    
+   
+}
+
+.team_photo_neteam
+{
+    position: absolute;
+    width: 100%
+   
+   
+   
+}
+.team_text_neteam
+{
+    padding-top: 100px;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0;
+    margin-bottom: 15px;
+}
+
+.team_item_neteam:hover .team_text_neteam
+{
+    opacity: 0.8;
+    
+}
+
+.team_item_neteam:hover .team_photo_neteam
+{
+    
+    opacity: 0.2;
+  
+}
+
+
+.team_name_neteam
+{
+    width: 100%;
+    font-family: 'Kaushan Script';
+    font-size: 40px;
+    font-weight: 500;
+    color: currentColor;
+ 
+}
+.team_prof_neteam
+{
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    font-weight: 500;
+    color: currentColor;
+    text-decoration:line-through;
+    text-transform: uppercase;
+}
+
+.team_info_neteam
+{
+    width: 100%;
+    text-align: center;
+    max-width: 550px;    
+    position: relative;
+    margin-top: 630px;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trip
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+   
+}
+.trip_item
+{
+   width: 33.333333% ;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.trip_photo
+{
+   
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;    
+    height: 500px;
+    border: 2px solid #eaeaea;
+    
+}
+.trip_content
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(232, 69, 69, .9);
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.trip_item:hover .trip_content
+{
+   opacity: 1; 
+}
+
+.trip_text
+{
+    font-size: 300;
+    color: #ffffff;
+    font-family: 'Kaushan Script';
+}
+.trip_title
+{
+    font-size: 300;
+    color: #ffffff;
+    font-family: 'Kaushan Script';
+    text-transform: uppercase;
+}
+.trip_link
+{
+    font-family: 'Kaushan Script';
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    opacity: 0.75;
+}
+.trip_link:hover 
+{
+    opacity: 1;
+    text-decoration: underline;
+    
+}
+
+
+
+.footer
+{
+   
+    background-color: #ffffff;
+}
+.footer_inner
+{
+     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.copyright
+{
+    background-color: #9faf7e;
+    padding: 10px 0;
+}
+.copyright_text
+{
+    text-align: center;
+    color: #f5eeee;
+    font-size: 14px;
+    
+    
+}
