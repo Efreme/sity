@@ -446,7 +446,7 @@ p
 {
     padding-top: 100px;
     position: absolute;
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-top: 10px;
     font-family: 'Kaushan Script';
@@ -568,13 +568,14 @@ p
 
 .trip_text
 {
-    font-size: 300;
+    
+    font-size: 25px;
     color: #ffffff;
     font-family: 'Kaushan Script';
 }
 .trip_title
 {
-    font-size: 300;
+    font-size: 35px;
     color: #ffffff;
     font-family: 'Kaushan Script';
     text-transform: uppercase;
