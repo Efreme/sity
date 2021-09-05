@@ -291,6 +291,7 @@ p
 {
     width: 40%;
     margin: 0 30px;
+    position: relative;
 
 }
 
@@ -302,6 +303,15 @@ p
     
 }
 
+.team_photo._active {
+    
+    width: 500px;
+    height: 500px;
+   
+    
+  
+    
+}
 
 
 
