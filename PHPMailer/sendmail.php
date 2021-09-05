@@ -12,11 +12,11 @@ $mail->IsHTML(true);
 
 //От кого письмо
 
-$mail->setFrom('efremeii@mail.ru', 'Егор Ефремов');
+$mail->setFrom('info@fls.guru', 'Егор Ефремов');
 
 //Кому отправить
 
-$mail->addAddress('tujhtahtvjd@gmail.com');
+$mail->addAddress('code@fls.guru');
 
 //Тема письма
 
@@ -54,7 +54,7 @@ if(trim(!empty($_POST['message']))){
 //Прикрепить файл
 if (!empty($_FILES['image']['tmp_name'])) {
 //    пусть загрузки файла
-    $filePath = _DIR_. "/files/" .$_FILES['image']['name'];
+    $filePath = _DIR_ . "/files/" . $_FILES['image']['name'];
 //    грузим файл
     if(copy($_FILES['image']['tmp_name'], $filePath)) {
         $fileAttach = $filePath;
@@ -75,5 +75,5 @@ if(!$mail->send()) {
 $response = ['message' => $message];
 
 header('Content-type: application/json');
-echo json_encode($responce);
+echo json_encode($response);
 ?>
