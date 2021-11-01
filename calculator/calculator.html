@@ -1,0 +1,268 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<DOCTYPE html>
+<!--Оболочка документа, указание языка содержимого-->
+<html lang="ru">
+<!--    Заголовок странцы, контейнер для других важных данных(не отображатся)-->
+    <head>
+         
+<!--    Заголовок страницы в браузере-->
+        <title>Прекраснсый калькулятор</title> 
+<!--        Подключаем CSS -->
+        <link rel="stylesheet" href="calculator.css">
+<!--        кодировка страницы-->
+        <meta chatset="UTF-8">
+<!--        адаптив-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+         
+    </head>
+<!--    Отображение тела страницы-->
+    <body>
+<!--        оболочка тела демонстрации-->
+<div class="wrapper">
+<div class="body_cal">
+<div class="hidden">
+    <div >
+    <div class = "hidden_body">
+        <div class="hidden_conteiner">
+    <div class = "body_calmenu_vert">
+        
+        <div class="vertical_arrive_button">
+         <div  id="ln" class="vertical_button">
+        <div class="button">
+            <div class="backgraund">
+                <div class="text">ln</div>
+            </div>
+            
+            </div></div>
+            
+            <div id="pi" class="vertical_button">
+            <div  class="button">
+            <div class="backgraund">
+                <div class="text">Pi</div>
+            </div>
+            
+            </div></div>
+            
+        <div id="raq" class="vertical_button">
+            <div  class="button">
+            <div class="backgraund">
+                <div class="text">raq</div>
+            </div>
+            
+            </div></div>
+            
+            <div id="^" class="vertical_button">
+            <div   class="button">
+            <div class="backgraund">
+                <div class="text">X<sup>3</sup></div>
+            </div>
+            
+            </div></div>
+        
+            <div id="X2" class="vertical_button">
+            <div  class="button">
+            <div class="backgraund">
+                <div class="text">X<sup>2</sup></div>
+            </div>
+            
+            </div></div>
+        
+            <div id="1/x" class="">
+            <div  class="button">
+            <div class="backgraund">
+                <div class="text">1/x</div>
+            </div>
+            
+            </div></div>
+         
+<!--
+            <div class="round_button_array">
+            <div class="round_button">
+               <div class="round">
+                <div id="(" class = "round_text">(</div>
+                </div> 
+               <div class="round">
+                <div id=")" class = "round_text">)</div>
+                </div>  
+                
+            </div>
+            </div>
+        
+-->
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+<div class="body_calmenu">
+<div class="body_cal_menu_1">
+    
+    <input class="display" type="text" name="calculator" minlength="0" maxlength="9" placeholder="" value="" disabled >
+    
+</div>
+    
+<div class="body_cal_menu_2">
+    <div class = "hidden_button">
+    
+    </div>
+    <div class="del_buttons">
+    <div id ="reset" class="buttons">reset
+    </div>
+    <div id ="del" class="buttons">del</div>
+    </div>
+    
+    <div class="button_array">
+    
+        <div class="button_line">
+        <div id="1" class="button">
+            <div class="backgraund">
+                <div class="text">1</div>
+            </div>
+            
+            </div>
+            
+            <div id="2" class="button">
+            <div class="backgraund">
+                <div class="text">2</div>
+            </div>
+            
+            </div>
+            
+            <div id="3" class="button">
+            <div class="backgraund">
+                <div class="text">3</div>
+            </div>
+            
+            </div>
+            
+            <div id="/" class="button">
+            <div class="backgraund">
+                <div class="text">/</div>
+            </div>
+            
+            </div>
+        </div>
+    
+    
+    </div>
+    
+      <div class="button_array">
+    
+        <div class="button_line">
+        <div id="4" class="button">
+            <div class="backgraund">
+                <div class="text">4</div>
+            </div>
+            
+            </div>
+            
+            <div id="5" class="button">
+            <div class="backgraund">
+                <div class="text">5</div>
+            </div>
+            
+            </div>
+            
+            <div id="6" class="button">
+            <div class="backgraund">
+                <div class="text">6</div>
+            </div>
+            
+            </div>
+            
+            <div id="-" class="button">
+            <div class="backgraund">
+                <div class="text">-</div>
+            </div>
+            
+            </div>
+        </div>
+    
+    
+    </div>
+    
+      <div class="button_array">
+    
+        <div class="button_line">
+        <div id="7" class="button">
+            <div class="backgraund">
+                <div class="text">7</div>
+            </div>
+            
+            </div>
+            
+            <div id="8" class="button">
+            <div class="backgraund">
+                <div class="text">8</div>
+            </div>
+            
+            </div>
+            
+            <div id="9" class="button">
+            <div class="backgraund">
+                <div class="text">9</div>
+            </div>
+            
+            </div>
+            
+            <div id="+" class="button">
+            <div class="backgraund">
+                <div class="text">+</div>
+            </div>
+            
+            </div>
+        </div>
+          
+            <div class="button_array">
+    
+        <div  class="button_line">
+        <div id="." class="button">
+            <div class="backgraund">
+                <div class="text">.</div>
+            </div>
+            
+            </div>
+            
+            <div id="0" class="button">
+            <div class="backgraund">
+                <div class="text">0</div>
+            </div>
+            
+            </div>
+            
+            <div id="*" class="button">
+            <div class="backgraund">
+                <div class="text">*</div>
+            </div>
+            
+            </div>
+            
+            <div id="=" class="button_rav">
+            <div class="backgraund">
+                <div class="text">=</div>
+            </div>
+            
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+    </div>
+   
+    
+</div> 
+</div>
+</div>
+</div>    
+  
+
+       
+    <!--        Подключаем файл js скриптов-->
+      <script src="calculator.js"></script>
+    
+    </body>
+</html>
